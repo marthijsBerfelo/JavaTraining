@@ -1,0 +1,5 @@
+TC1;tester@test.com;tester;t;Valid login
+TC2;tester@test.com;incorrect;f;Invalid password
+TC3;incorrect@test.com;tester;f;Invalid user
+TC4;tester@test.com;;fp;Empty password
+TC5;;tester;fe;Empty user

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<suite name="Login_Suite">
+    <listeners>
+        <listener class-name="testListener.TestMonitor" />
+    </listeners>
+    <test name="T1" preserve-order="True">
+        <classes>
+            <class name="testSuite.LoginTest">
+                <methods>
+                    <include name="Login" />
+                    <include name="LoginValidations" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

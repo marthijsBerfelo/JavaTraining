@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+<log4j:configuration>
+
+<appender name="FILE" class="org.apache.log4j.FileAppender">
+   <param name="file" value="${current.date}_test.log"/>
+   <param name="threshold" value="debug"/>
+   <param name="append" value="false"/>
+   <layout class="org.apache.log4j.PatternLayout">
+      <param name="conversionPattern" value="%d{yyyy-MM-dd HH:mm:ss.SSS} [%-5p] %m%n"/>
+   </layout>
+</appender>
+
+<logger name="log4j.rootLogger" additivity="false">
+   <level value="DEBUG"/>
+   <appender-ref ref="FILE"/>
+</logger>
+
+</log4j:configuration>
